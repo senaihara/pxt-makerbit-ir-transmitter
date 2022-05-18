@@ -10,7 +10,8 @@ namespace makerbit {
 
   class InfraredLed {
     private pin: AnalogPin;
-    private waitCorrection: number;
+    //change waitCorrection to public. because of micro:bit v2 not work well.
+    public waitCorrection: number;
 
     constructor(pin: AnalogPin) {
       this.pin = pin;
